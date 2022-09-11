@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="icon" href="img/favicon.jpg" type="img/Blanchard-icon">
@@ -23,7 +23,7 @@
             <div class="swiper-box swiper-box-header">
                 <div class="header__top flex">
                     <a href="#" class="header__logo">
-                        <img src="/img/Лого.svg" alt="Логотип" class="header__logo-img">
+                        <img src="img/Лого.svg" alt="Логотип" class="header__logo-img">
                     </a>
                     <button aria-label="Меню" class="btn-reset burger">
                         <span class="burger__line"></span>
@@ -37,32 +37,32 @@
                         </button>
                         <ul class="header__list-top list-reset flex">
                             <li class="header__item-top">
-                                <a href="#about-us" class="header__link">
+                                <a href="#about-us " class="header__link js-scroll-link">
                                     О&nbsp;нас
                                 </a>
                             </li>
                             <li class="header__item-top">
-                                <a href="#gallery" class="header__link">
+                                <a href="#gallery" class="header__link js-scroll-link">
                                     Галерея
                                 </a>
                             </li>
                             <li class="header__item-top">
-                                <a href="#catalog" class="header__link">
+                                <a href="#catalog" class="header__link js-scroll-link">
                                     Каталог
                                 </a>
                             </li>
                             <li class="header__item-top">
-                                <a href="#events" class="header__link">
+                                <a href="#events" class="header__link js-scroll-link">
                                     События
                                 </a>
                             </li>
                             <li class="header__item-top">
-                                <a href="#projects" class="header__link">
+                                <a href="#projects" class="header__link js-scroll-link">
                                     Проекты
                                 </a>
                             </li>
                             <li class="header__item-top">
-                                <a href="#contacts" class="header__link">
+                                <a href="#contacts" class="header__link js-scroll-link">
                                     Контакты
                                 </a>
                             </li>
@@ -181,44 +181,9 @@
                                 </svg>
                             </button>
                             <input type="search" class="header__form-input" placeholder="Поиск по сайту">
+
                         </form>
-                        <!-- 
-                        <div class="header__search-wrap-btm flex" id="header__search-wrap-btm">
-                            <button aria-label="Поиск" class="btn-reset header__search-btn-open">
-                                <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="7.56126" height="1.89031"
-                                        transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" />
-                                    <path
-                                        d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" />
-                                </svg>
-                            </button>
-                            <div class="header__search">
-                                <form action="#" class="header__form">
-                                    <input type="search" class="header__form-input">
-                                    <button aria-label="Найти" class="header__form-submit btn-reset" type="submit">
-                                        <svg width="24" height="24" viewbox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="7.56126" height="1.89031"
-                                                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" />
-                                            <path
-                                                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" />
-                                        </svg>
-                                    </button>
-                                </form>
-                                <button aria-label="Закрыть поиск" class="header__search-btn-close btn-reset"
-                                    type="button">
-                                    <svg width="23" height="23" viewbox="0 0 23 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="29.567" height="2.9567"
-                                            transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
-                                            fill="white" />
-                                        <rect width="29.567" height="2.9567"
-                                            transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
-                                            fill="white" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div> -->
+
                     </div>
                 </div>
 
@@ -238,7 +203,7 @@
                         намеченных
                         плановых
                         заданий создаёт предпосылки для новых предложений</p>
-                    <a href="#contacts" class="header__btn">
+                    <a href="#contacts" class="header__btn js-scroll-link">
                         Подписаться на&nbsp;рассылку
                     </a>
                 </div>
@@ -301,12 +266,35 @@
 
                             <div class="gallery__modal-wrap ">
 
-                                <div class="gallery__modal-window " data-target="modal">
+                                <div class="gallery__modal-window " data-target="modal1">
+                                    <figure class="gallery__modal-figure">
+                                        <picture class="gallery__modal-img">
+                                            <source srcset="img/modal1_320.jpg" media="(max-width: 320px)">
+                                            <source srcset="img/modal1_768.jpg" media="(max-width: 768px)">
+                                            <source srcset="img/modal1_1024.jpg" media="(max-width: 1200px)">
+                                            <img src="img/modal1_1920.jpg" alt="Фигура с розовым лицом">
+                                        </picture>
+                                        <figcaption class="gallery__modal-content">
+                                            <strong class="gallery__modal-name">Казимир Малевич</strong>
+                                            <h2 class="gallery__modal-title"> Торс (Фигура с&nbsp;розовым лицом)</h2>
+                                            <span class="gallery__modal-date">1928&ndash;1929</span>
+                                            <p class="text gallery__modal-text">Эти странные безликие
+                                                &laquo;полуобразы&raquo; (так называл подобные работы сам художник),
+                                                зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют
+                                                по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах
+                                                вымышленного художником Космоса, в&nbsp;пространстве без времени.
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                    <button class="gallery__modal-close" type="button"></button>
+                                </div>
+
+                                <div class="gallery__modal-window " data-target="modal2">
                                     <figure class="gallery__modal-figure">
                                         <picture class="gallery__modal-img">
                                             <source srcset="img/modal_320.png" media="(max-width: 320px)">
                                             <source srcset="img/modal_768.png" media="(max-width: 768px)">
-                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1024px)">
+                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1200px)">
                                             <img src="img/malevich_window.png" alt="Женщина с граблями">
                                         </picture>
                                         <figcaption class="gallery__modal-content">
@@ -325,58 +313,37 @@
                                     <button class="gallery__modal-close" type="button"></button>
                                 </div>
 
-                                <div class="gallery__modal-window " data-target="modal2">
-                                    <figure class="gallery__modal-figure">
-                                        <picture class="gallery__modal-img">
-                                            <source srcset="img/modal_320.png" media="(max-width: 320px)">
-                                            <source srcset="img/modal_768.png" media="(max-width: 768px)">
-                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1024px)">
-                                            <img src="img/malevich_window.png" alt="Женщина с граблями">
-                                        </picture>
-                                        <figcaption class="gallery__modal-content">
-                                            <strong class="gallery__modal-name">Казимир Малевич</strong>
-                                            <h2 class="gallery__modal-title"> &laquo;Женщина с&nbsp;граблями&raquo;</h2>
-                                            <span class="gallery__modal-date">1931&ndash;1932</span>
-                                            <p class="text gallery__modal-text">Картина из&nbsp;второй серии
-                                                крестьянского
-                                                цикла работ Казимира Малевича. Художник принялся
-                                                за&nbsp;её&nbsp;создание
-                                                в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был
-                                                утерян
-                                                после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
-                                        </figcaption>
-                                    </figure>
-                                    <button class="gallery__modal-close" type="button"></button>
-                                </div>
                                 <div class="gallery__modal-window " data-target="modal3">
                                     <figure class="gallery__modal-figure">
                                         <picture class="gallery__modal-img">
-                                            <source srcset="img/modal_320.png" media="(max-width: 320px)">
-                                            <source srcset="img/modal_768.png" media="(max-width: 768px)">
-                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1024px)">
-                                            <img src="img/malevich_window.png" alt="Женщина с граблями">
+                                            <source srcset="img/modal3_320.jpg" media="(max-width: 320px)">
+                                            <source srcset="img/modal3_768.jpg" media="(max-width: 768px)">
+                                            <source srcset="img/modal3_1024.jpg" media="(max-width: 1200px)">
+                                            <img src="img/modal3_1920.jpg" alt="Сбор урожая">
                                         </picture>
                                         <figcaption class="gallery__modal-content">
                                             <strong class="gallery__modal-name">Казимир Малевич</strong>
-                                            <h2 class="gallery__modal-title"> &laquo;Женщина с&nbsp;граблями&raquo;</h2>
-                                            <span class="gallery__modal-date">1931&ndash;1932</span>
-                                            <p class="text gallery__modal-text">Картина из&nbsp;второй серии
-                                                крестьянского
-                                                цикла работ Казимира Малевича. Художник принялся
-                                                за&nbsp;её&nbsp;создание
-                                                в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был
-                                                утерян
-                                                после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                                            <h2 class="gallery__modal-title"> Сбор урожая (Марфа и&nbsp;Ванька)</h2>
+                                            <span class="gallery__modal-date">После 1927</span>
+                                            <p class="text gallery__modal-text">Эта картина Казимира Севериновича
+                                                Малевича была написана в&nbsp;1912&nbsp;году. Работа выполнена маслом
+                                                на&nbsp;холсте. Произведение находится в&nbsp;Стеделик музеум,
+                                                Амстердам.
+
+                                                Образы крестьянской жизни, образы сельского труда, воплощенные
+                                                художником отличаются пронзительной нотой драматизма, о&nbsp;котором
+                                                Малевичу и&nbsp;в&nbsp;голову не&nbsp;приходило помышлять ранее. </p>
                                         </figcaption>
                                     </figure>
                                     <button class="gallery__modal-close" type="button"></button>
                                 </div>
+
                                 <div class="gallery__modal-window " data-target="modal4">
                                     <figure class="gallery__modal-figure">
                                         <picture class="gallery__modal-img">
                                             <source srcset="img/modal_320.png" media="(max-width: 320px)">
                                             <source srcset="img/modal_768.png" media="(max-width: 768px)">
-                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1024px)">
+                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1200px)">
                                             <img src="img/malevich_window.png" alt="Женщина с граблями">
                                         </picture>
                                         <figcaption class="gallery__modal-content">
@@ -394,12 +361,13 @@
                                     </figure>
                                     <button class="gallery__modal-close" type="button"></button>
                                 </div>
+
                                 <div class="gallery__modal-window " data-target="modal5">
                                     <figure class="gallery__modal-figure">
                                         <picture class="gallery__modal-img">
                                             <source srcset="img/modal_320.png" media="(max-width: 320px)">
                                             <source srcset="img/modal_768.png" media="(max-width: 768px)">
-                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1024px)">
+                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1200px)">
                                             <img src="img/malevich_window.png" alt="Женщина с граблями">
                                         </picture>
                                         <figcaption class="gallery__modal-content">
@@ -417,12 +385,13 @@
                                     </figure>
                                     <button class="gallery__modal-close" type="button"></button>
                                 </div>
+
                                 <div class="gallery__modal-window " data-target="modal6">
                                     <figure class="gallery__modal-figure">
                                         <picture class="gallery__modal-img">
                                             <source srcset="img/modal_320.png" media="(max-width: 320px)">
                                             <source srcset="img/modal_768.png" media="(max-width: 768px)">
-                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1024px)">
+                                            <source srcset="img/gal_window_1024.png" media="(max-width: 1200px)">
                                             <img src="img/malevich_window.png" alt="Женщина с граблями">
                                         </picture>
                                         <figcaption class="gallery__modal-content">
@@ -561,8 +530,9 @@
                     разнесены на&nbsp;независимые элементы.
                 </p>
                 <div class="catalog__content flex">
-                    <div class="catalog__left">
-                        <div class="catalog__info catalog__info--active" data-target="girlandaio">
+                    <div class="catalog__left catalog-wrap js-tabs-wrap">
+                        <div class="catalog__info catalog__info--active catalog__painter-info active js-tab-content"
+                            data-target="girlandaio">
                             <picture>
                                 <source srcset="img/girlandaio_320.png" media="(max-width: 320px)">
                                 <source srcset="img/girlandaio_768.png" media="(max-width: 768px)">
@@ -583,7 +553,7 @@
                                 Флоренции в&nbsp;костюмах того времени).
                             </p>
                         </div>
-                        <div class="catalog__info" data-target="boltraffio">
+                        <div class="catalog__info catalog__painter-info js-tab-content" data-target="boltraffio">
                             <picture>
                                 <source srcset="img/boltraffio_320.png" media="(max-width: 320px)">
                                 <source srcset="img/boltraffio_768.jpg" media="(max-width: 768px)">
@@ -602,7 +572,7 @@
                                 художником Лодовико Моро и&nbsp;славился своими психологическими портретами.
                             </p>
                         </div>
-                        <div class="catalog__info" data-target="vecchietta">
+                        <div class="catalog__info catalog__painter-info js-tab-content" data-target="vecchietta">
                             <picture>
                                 <source srcset="img/vecchietta_320.jpg" media="(max-width: 320px)">
                                 <source srcset="img/vecchietta_768.jpg" media="(max-width: 768px)">
@@ -625,7 +595,7 @@
                                 Сиены.
                             </p>
                         </div>
-                        <div class="catalog__info" data-target="none">
+                        <div class="catalog__info catalog__painter-info js-tab-content" data-target="none">
                             <picture>
                                 <source srcset="img/painters_320.png" media="(max-width: 320px)">
                                 <source srcset="img/painters_768.png" media="(max-width: 768px)">
@@ -641,1013 +611,1027 @@
                         </div>
                     </div>
                     <div class="catalog__right">
-                        <ul class="accordion list-reset">
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn ">
-                                    <span class="accordion-subtitle">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
+                        <ul class="catalog__accordion accordion js-accordion-container list-reset">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="btn-reset accordion__heading ac-trigger ">
+                                    <span class="accordion__heading-text">
+                                        <span class="accordion__heading-text-wrap">C&nbsp;1400
+                                            по&nbsp;1499&nbsp;гг</span>
+                                    </span>
+                                    <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                        <path class="head-icon-round"
+                                            d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                                            fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                                        <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
                                     </svg>
                                 </button>
-                                <ul class="accordion-list list-reset">
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="boltraffio">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бьяджо д&rsquo;Антонио Туччи
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="vecchietta">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="girlandaio">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни ди&nbsp;Паоло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
 
-                            </li>
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn">
-                                    <span class="accordion-subtitle">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
-                                    </svg>
-                                </button>
-                                <ul class="accordion-list list-reset">
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="boltraffio">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бьяджо д&rsquo;Антонио Туччи
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="vecchietta">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="girlandaio">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни ди&nbsp;Паоло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
-
-                            </li>
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn">
-                                    <span class="accordion-subtitle">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
-                                    </svg>
-                                </button>
-                                <!-- <ul class="accordion-list list-reset">
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Бенедетто ди&nbsp;Биндо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Бергоньоне, Амброджо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Биссоло, Франческо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Больтраффио, Джованни
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Бенедетто ди&nbsp;Биндо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Бонсиньори, Франческо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Боттичини, Рафаэлло
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Брамантино
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Бреа, Людовико
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Бьяджо д&rsquo;Антонио Туччи
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Веккьетта
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Андреа Верроккьо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Доменико Гирландайо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Беноццо Гоццоли
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Граначчи, Франческо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Грегорио ди Чекко
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Джованни да Удине
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Джованни ди&nbsp;Паоло
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Джорджоне
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Парентино, Бернардо
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Пезеллино
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Пьетро Перуджино
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Перуцци, Бальдассаре
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Пизанелло
-                                    </button>
-                                </li>
-                                <li class="accordion-item">
-                                    <button class="btn-reset accordion-item-btn">
-                                        Пинтуриккьо
-                                    </button>
-                                </li>
-                            </ul> -->
-                                <div class="accordion-empty flex">
-                                    <picture>
-                                        <source srcset="img/empty_320.png" media="(max-width: 320px)">
-                                        <source srcset="img/empty_768.png" media="(max-width: 768px)">
-                                        <source srcset="img/empty_1024.png" media="(max-width: 1024px)">
-                                        <img class="accordion-empty-img" src="img/empty.png" alt="Пустое изображение">
-                                    </picture>
-                                    <div class="accordion-empty-info">
-                                        <h3 class="accordion-empty-subtitle">Здесь пока пусто</h3>
-                                        <p class="accordion-empty-descr">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете
-                                            найти
-                                            что-то интересное для себя</p>
-                                        <a href="#" class="accordion-empty-link">В&nbsp;галерею</a>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <ul class="accordion__inner-list list-reset">
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бергоньоне, Амброджо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Биссоло, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="boltraffio">
+                                                    <span class="link__text">Больтраффио, Джованни
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бонсиньори, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Боттичини, Рафаэлло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Брамантино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бреа, Людовико
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бьяджо д&rsquo;Антонио Туччи
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="vecchietta">
+                                                    <span class="link__text">Веккьетта
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Андреа Верроккьо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn active"
+                                                    data-path="girlandaio">
+                                                    <span class="link__text">Доменико Гирландайо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Беноццо Гоццоли
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Граначчи, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Грегорио ди Чекко
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни да Удине
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни ди&nbsp;Паоло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джорджоне
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Парентино, Бернардо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пезеллино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пьетро Перуджино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Перуцци, Бальдассаре
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пизанелло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пинтуриккьо
+                                                    </span></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn">
-                                    <span class="accordion-subtitle">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
+                            <li class="accordion__question ac js-enabled">
+                                <button class="btn-reset accordion__heading ac-trigger ">
+                                    <span class="accordion__heading-text">
+                                        <span class="accordion__heading-text-wrap">C&nbsp;1500
+                                            по&nbsp;1599&nbsp;гг</span>
+                                    </span>
+                                    <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                        <path class="head-icon-round"
+                                            d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                                            fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                                        <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
                                     </svg>
                                 </button>
-                                <ul class="accordion-list list-reset">
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="boltraffio">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бьяджо д&rsquo;Антонио Туччи
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="vecchietta">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="girlandaio">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни ди&nbsp;Паоло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
 
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <ul class="accordion__inner-list list-reset">
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бергоньоне, Амброджо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Биссоло, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="boltraffio">
+                                                    <span class="link__text">Больтраффио, Джованни
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бонсиньори, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Боттичини, Рафаэлло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Брамантино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бреа, Людовико
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бьяджо д&rsquo;Антонио Туччи
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="vecchietta">
+                                                    <span class="link__text">Веккьетта
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Андреа Верроккьо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn active"
+                                                    data-path="girlandaio">
+                                                    <span class="link__text">Доменико Гирландайо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Беноццо Гоццоли
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Граначчи, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Грегорио ди Чекко
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни да Удине
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни ди&nbsp;Паоло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джорджоне
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Парентино, Бернардо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пезеллино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пьетро Перуджино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Перуцци, Бальдассаре
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пизанелло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пинтуриккьо
+                                                    </span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn">
-                                    <span class="accordion-subtitle">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
+                            <li class="accordion__question ac js-enabled">
+                                <button class="btn-reset accordion__heading ac-trigger ">
+                                    <span class="accordion__heading-text">
+                                        <span class="accordion__heading-text-wrap">C&nbsp;1600
+                                            по&nbsp;1699&nbsp;гг</span>
+                                    </span>
+                                    <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                        <path class="head-icon-round"
+                                            d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                                            fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                                        <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
                                     </svg>
                                 </button>
-                                <ul class="accordion-list list-reset">
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="boltraffio">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бьяджо д&rsquo;Антонио Туччи
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="vecchietta">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="girlandaio">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни ди&nbsp;Паоло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
 
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <div class="accordion-empty flex">
+                                            <picture>
+                                                <source srcset="img/empty_320.png" media="(max-width: 320px)">
+                                                <source srcset="img/empty_768.png" media="(max-width: 768px)">
+                                                <source srcset="img/empty_1024.png" media="(max-width: 1024px)">
+                                                <img class="accordion-empty-img" src="img/empty.png"
+                                                    alt="Пустое изображение">
+                                            </picture>
+                                            <div class="accordion-empty-info">
+                                                <h3 class="accordion-empty-subtitle">Здесь пока пусто</h3>
+                                                <p class="accordion-empty-descr">А&nbsp;в&nbsp;галерее вы&nbsp;всегда
+                                                    можете
+                                                    найти
+                                                    что-то интересное для себя</p>
+                                                <a href="#" class="accordion-empty-link">В&nbsp;галерею</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn">
-                                    <span class="accordion-subtitle">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
+                            <li class="accordion__question ac js-enabled">
+                                <button class="btn-reset accordion__heading ac-trigger ">
+                                    <span class="accordion__heading-text">
+                                        <span class="accordion__heading-text-wrap">C&nbsp;1700
+                                            по&nbsp;1799&nbsp;гг</span>
+                                    </span>
+                                    <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                        <path class="head-icon-round"
+                                            d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                                            fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                                        <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
                                     </svg>
                                 </button>
-                                <ul class="accordion-list list-reset">
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="boltraffio">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бьяджо д&rsquo;Антонио Туччи
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="vecchietta">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="girlandaio">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни ди&nbsp;Паоло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
 
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <ul class="accordion__inner-list list-reset">
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бергоньоне, Амброджо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Биссоло, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="boltraffio">
+                                                    <span class="link__text">Больтраффио, Джованни
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бонсиньори, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Боттичини, Рафаэлло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Брамантино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бреа, Людовико
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бьяджо д&rsquo;Антонио Туччи
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="vecchietta">
+                                                    <span class="link__text">Веккьетта
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Андреа Верроккьо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn active"
+                                                    data-path="girlandaio">
+                                                    <span class="link__text">Доменико Гирландайо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Беноццо Гоццоли
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Граначчи, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Грегорио ди Чекко
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни да Удине
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни ди&nbsp;Паоло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джорджоне
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Парентино, Бернардо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пезеллино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пьетро Перуджино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Перуцци, Бальдассаре
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пизанелло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пинтуриккьо
+                                                    </span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="accordion-main-list">
-                                <button class="btn-reset accordion-btn">
-                                    <span class="accordion-subtitle">C&nbsp;2000&nbsp;г</span>
-                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none"
+                            <li class="accordion__question ac js-enabled">
+                                <button class="btn-reset accordion__heading ac-trigger ">
+                                    <span class="accordion__heading-text">
+                                        <span class="accordion__heading-text-wrap">C&nbsp;1800
+                                            по&nbsp;1899&nbsp;гг</span>
+                                    </span>
+                                    <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
-                                            fill="#ECECEC" />
-                                        <path
-                                            d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
-                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                        <path class="head-icon-round"
+                                            d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                                            fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                                        <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
                                     </svg>
                                 </button>
-                                <ul class="accordion-list list-reset">
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бергоньоне, Амброджо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Биссоло, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="boltraffio">
-                                            Больтраффио, Джованни
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бенедетто ди&nbsp;Биндо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бонсиньори, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Боттичини, Рафаэлло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Брамантино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бреа, Людовико
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Бьяджо д&rsquo;Антонио Туччи
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="vecchietta">
-                                            Веккьетта
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Андреа Верроккьо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="girlandaio">
-                                            Доменико Гирландайо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Беноццо Гоццоли
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Граначчи, Франческо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Грегорио ди Чекко
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни да Удине
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джованни ди&nbsp;Паоло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Джорджоне
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Парентино, Бернардо
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пезеллино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пьетро Перуджино
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Перуцци, Бальдассаре
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пизанелло
-                                        </button>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <button class="btn-reset accordion-item-btn" data-path="none">
-                                            Пинтуриккьо
-                                        </button>
-                                    </li>
-                                </ul>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <ul class="accordion__inner-list list-reset">
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бергоньоне, Амброджо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Биссоло, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="boltraffio">
+                                                    <span class="link__text">Больтраффио, Джованни
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бонсиньори, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Боттичини, Рафаэлло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Брамантино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бреа, Людовико
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бьяджо д&rsquo;Антонио Туччи
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="vecchietta">
+                                                    <span class="link__text">Веккьетта
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Андреа Верроккьо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn active"
+                                                    data-path="girlandaio">
+                                                    <span class="link__text">Доменико Гирландайо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Беноццо Гоццоли
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Граначчи, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Грегорио ди Чекко
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни да Удине
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни ди&nbsp;Паоло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джорджоне
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Парентино, Бернардо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пезеллино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пьетро Перуджино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Перуцци, Бальдассаре
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пизанелло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пинтуриккьо
+                                                    </span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion__question ac js-enabled">
+                                <button class="btn-reset accordion__heading ac-trigger ">
+                                    <span class="accordion__heading-text">
+                                        <span class="accordion__heading-text-wrap">C&nbsp;1900
+                                            по&nbsp;1999&nbsp;гг</span>
+                                    </span>
+                                    <svg class="head-icon" width="50" height="50" viewbox="0 0 50 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="head-icon-round"
+                                            d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z"
+                                            fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                                        <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                                    </svg>
+                                </button>
+
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <ul class="accordion__inner-list list-reset">
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бергоньоне, Амброджо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Биссоло, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="boltraffio">
+                                                    <span class="link__text">Больтраффио, Джованни
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бенедетто ди&nbsp;Биндо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бонсиньори, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Боттичини, Рафаэлло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Брамантино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бреа, Людовико
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Бьяджо д&rsquo;Антонио Туччи
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="vecchietta">
+                                                    <span class="link__text">Веккьетта
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Андреа Верроккьо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn active"
+                                                    data-path="girlandaio">
+                                                    <span class="link__text">Доменико Гирландайо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Беноццо Гоццоли
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Граначчи, Франческо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Грегорио ди Чекко
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни да Удине
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джованни ди&nbsp;Паоло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Джорджоне
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Парентино, Бернардо
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пезеллино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пьетро Перуджино
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Перуцци, Бальдассаре
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пизанелло
+                                                    </span></a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a href="#"
+                                                    class="accordion__painter-link link link--text link--text-another js-tab-btn"
+                                                    data-path="none">
+                                                    <span class="link__text">Пинтуриккьо
+                                                    </span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -1662,14 +1646,14 @@
 
                 <div class="swiper-box swiper-box-events">
                     <div class="swiper-container swiper-container-events">
-                        <div class="swiper-wrapper swaper-wrapper-events">
+                        <div class="swiper-wrapper swiper-wrapper-events">
 
                             <div class="events__content swiper-slide swiper-slide-event">
                                 <picture>
                                     <source srcset="img/event1_320.jpg" media="(max-width: 320px)">
                                     <source srcset="img/event1_768.jpg" media="(max-width: 769px)">
                                     <source srcset="img/event1_1024.jpg" media="(max-width: 1024px)">
-                                    <img src="/img/events1.png" alt="Иллюстрация">
+                                    <img src="img/events1.png" alt="Иллюстрация">
                                 </picture>
                                 <div class="events__info">
                                     <p class="events__place">Музей им. Щусева</p>
@@ -1687,7 +1671,7 @@
                                     <source srcset="img/event2_320.png" media="(max-width: 320px)">
                                     <source srcset="img/event2_768.jpg" media="(max-width: 769px)">
                                     <source srcset="img/event2_1024.jpg" media="(max-width: 1024px)">
-                                    <img src="/img/events2.png" alt="Иллюстрация">
+                                    <img src="img/events2.png" alt="Иллюстрация">
                                 </picture>
                                 <div class="events__info">
                                     <p class="events__place">ММОМА</p>
@@ -1705,7 +1689,7 @@
                                     <source srcset="img/event3_320.png" media="(max-width: 320px)">
                                     <source srcset="img/event3_768.jpg" media="(max-width: 769px)">
                                     <source srcset="img/event3_1024.jpg" media="(max-width: 1024px)">
-                                    <img src="/img/events3.png" alt="Иллюстрация">
+                                    <img src="img/events3.png" alt="Иллюстрация">
                                 </picture>
                                 <div class="events__info">
                                     <p class="events__place">Еврейский музей</p>
@@ -1724,7 +1708,7 @@
                                     <source srcset="img/event4_320.png" media="(max-width: 320px)">
                                     <source srcset="img/event4_768.jpg" media="(max-width: 769px)">
                                     <source srcset="img/event4_1024.jpg" media="(max-width: 1024px)">
-                                    <img src="/img/events4.png" alt="Иллюстрация">
+                                    <img src="img/events4.png" alt="Иллюстрация">
                                 </picture>
                                 <div class="events__info">
                                     <p class="events__place">ММАМ</p>
@@ -1743,7 +1727,7 @@
                                     <source srcset="img/event5_320.png" media="(max-width: 320px)">
                                     <source srcset="img/event5_768.jpg" media="(max-width: 769px)">
                                     <source srcset="img/event5_1024.jpg" media="(max-width: 1024px)">
-                                    <img src="/img/events5.png" alt="Иллюстрация">
+                                    <img src="img/events5.png" alt="Иллюстрация">
                                 </picture>
                                 <div class="events__info">
                                     <p class="events__place">Третьяковка на&nbsp;Крымском валу</p>
@@ -1755,9 +1739,10 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-button-next  events__swiper-btn">
-                            </div>
 
+
+                        </div>
+                        <div class="swiper-button-next  events__swiper-btn">
                         </div>
                         <div class="swiper-pagination swiper-pagination-events"> </div>
                     </div>
@@ -1836,49 +1821,49 @@
                         <div class="swiper-slide swiper-slide-parnters swiper-slide1">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners1.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners1.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slide2">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners2.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners2.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slide3">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners3.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners3.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slide4">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners4.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners4.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slide5">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners5.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners5.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slid6">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners6.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners6.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slid7">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners7.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners7.png">
                             </picture>
                         </div>
                         <div class="swiper-slide swiper-slide-parnters swiper-slide8">
                             <picture>
                                 <!-- <source srcset="img/partners1_1024.png" media="(max-width:1024px)"> -->
-                                <img class="partners__img" alt="Логотип" src="/img/partners8.png">
+                                <img class="partners__img" alt="Логотип" src="img/partners8.png">
                             </picture>
                         </div>
                     </div>
@@ -1903,7 +1888,7 @@
                         <p class="contacts__address-street">Леонтьевский переулок, дом 5/1</p>
                     </div>
 
-                    <form action="#" method="post" class="contacts__form" id="form">
+                    <form action="#" class="contacts__form" id="form" method="POST" enctype="multipart/form-data">
 
                         <input type="text" class="contacts__form-input" id="name" placeholder="Имя*" autocomplete="off"
                             name="name" required />
@@ -1955,7 +1940,7 @@
     <footer class=" footer">
         <div class="container footer__container">
             <a href="#" class="footer__logo">
-                <img src="/img/Лого.svg" alt="Логотип" class="footer__logo-img">
+                <img src="img/Лого.svg" alt="Логотип" class="footer__logo-img">
             </a>
             <ul class="footer__social-list list-reset">
                 <li class="footer__social-item">
@@ -1981,15 +1966,13 @@
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-    <script src="choices.min.js"></script>
+    <script src="libs/choices.min.js"></script>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="inputmask.min.js"></script>
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-    <script> const validate = new window.JustValidate('#form');</script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="libs/inputmask.min.js"></script>
+    <script src="libs/just-validate3.3.3.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
     <script src="script.js"></script>
 </body>
 

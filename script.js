@@ -48,78 +48,108 @@ var swiper = new Swiper('.header__swiper-container', {
 });
 
 
-document.querySelectorAll('.gallery__hover').forEach(function (tabsBtn) {
-    tabsBtn.addEventListener('click', function (e) {
 
-        document.querySelectorAll('.gallery__modal-window').forEach(tabsBtn => {
-            tabsBtn.classList.remove('gallery__modal-window--active')
-        })
 
-        document.querySelectorAll('.gallery__modal-wrap').forEach(tabsBtn => {
-            tabsBtn.classList.remove('gallery__modal-wrap--active')
-        })
+document.addEventListener("DOMContentLoaded", () => {
+    let gallerySlider = new Swiper(".swiper-container-gallery", {
+        slidesPerView: 1,
+        grid: {
+            rows: 1,
+            fill: "row"
+        },
+        spaceBetween: 20,
 
-        document.querySelectorAll('.gallery__modal-close').forEach(tabsBtn => {
-            tabsBtn.classList.remove('gallery__modal-window--active', 'gallery__modal-wrap--active')
-        })
+        navigation: {
+            nextEl: '.swiper-btn-gallery-next',
+            prevEl: '.swiper-btn-gallery-prev',
+        },
 
-        e.currentTarget.classList.add('gallery__modal-window--active')
+        pagination: {
+            el: '.swiper-pagination-gallery',
+            clickable: true,
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+                return '' + number;
+            }
 
-        e.currentTarget.classList.add('gallery__modal-wrap--active')
+        },
 
-        const path = e.currentTarget.dataset.path;
+        breakpoints: {
+            600: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 30
+            },
 
-        document.querySelector(`[data-target="${path}"]`).classList.add('gallery__modal-window--active', 'gallery__modal-wrap--active');
+            1920: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 50
+            }
+        },
+
+        a11y: false,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true
+        },
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        slideVisibleClass: "slide-visible",
+
+        on: {
+            init: function () {
+                this.slides.forEach((slide) => {
+                    if (!slide.classList.contains("slide-visible")) {
+                        slide.tabIndex = "-1";
+                    } else {
+                        slide.tabIndex = "";
+                    }
+                });
+            },
+            slideChange: function () {
+                this.slides.forEach((slide) => {
+                    if (!slide.classList.contains("slide-visible")) {
+                        slide.tabIndex = "-1";
+                    } else {
+                        slide.tabIndex = "";
+                    }
+                });
+            }
+        }
+
+
     });
-
 });
 
 
+const btns = document.querySelectorAll('.gallery__hover');
+const modalClose = document.querySelectorAll('.gallery__modal-close');
+const modals = document.querySelectorAll('.gallery__modal-window');
+const modalOverlay = document.querySelector('.gallery__modal-wrap ');
+
+btns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        let path = e.currentTarget.getAttribute('data-path');
+
+        modals.forEach((el) => {
+            el.classList.remove('gallery__modal-window--visible');
+        });
+
+        document.querySelector(`[data-target="${path}"]`).classList.add('gallery__modal-window--visible');
+        modalOverlay.classList.add('gallery__modal-wrap--visible');
+    });
+});
+
+modalOverlay.addEventListener('click', (e) => {
+    console.log(e.target);
 
 
-var Myswiper = new Swiper('.swiper-container-gallery', {
+    modalOverlay.classList.remove('gallery__modal-wrap--visible');
+    modals.forEach((el) => {
+        el.classList.remove('gallery__modal-window--visible');
+    });
 
-    navigation: {
-        nextEl: '.swiper-btn-gallery-next',
-        prevEl: '.swiper-btn-gallery-prev',
-    },
-
-    pagination: {
-        el: '.swiper-pagination-gallery',
-        clickable: true,
-        type: 'fraction',
-        formatFractionCurrent: function (number) {
-            return '' + number;
-        }
-
-    },
-
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-            slidesPerGroup: 3,
-        },
-        769: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-            slidesPerGroup: 3,
-        },
-
-        321: {
-            slidesPerView: 2,
-            spaceBetween: 52,
-            slidesPerGroup: 2,
-        },
-
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            slidesPerGroup: 1,
-        },
-
-
-    }
 });
 
 
@@ -144,16 +174,16 @@ var swiperEvents = new Swiper('.swiper-container-events', {
             spaceBetween: 50,
             slidesPerGroup: 3,
         },
-        769: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+        600: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 27,
         },
 
         500: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            spaceBetween: 34
+            spaceBetween: 34,
         },
 
         320: {
@@ -162,6 +192,7 @@ var swiperEvents = new Swiper('.swiper-container-events', {
     }
 
 });
+
 
 
 var swiperPartners = new Swiper('.swiper-container-partners', {
@@ -199,72 +230,50 @@ var swiperPartners = new Swiper('.swiper-container-partners', {
 });
 
 
-document.querySelectorAll('.accordion-item-btn').forEach(function (tabsBtn) {
-    tabsBtn.addEventListener('click', function (e) {
 
-        document.querySelectorAll('.catalog__info').forEach(tabsBtn => {
-            tabsBtn.classList.remove('catalog__info--active')
-        })
-
-        document.querySelectorAll('.accordion-item-btn').forEach(tabsBtn => {
-            tabsBtn.classList.remove('accordion-item-btn--active')
-        })
-
-        e.currentTarget.classList.add('accordion-item-btn--active')
-
-        const path = e.currentTarget.dataset.path;
-
-        document.querySelector(`[data-target="${path}"]`).classList.add('catalog__info--active');
+(() => {
+    new Accordion(".js-accordion-container", {
+        openOnInit: [0]
     });
-
-});
-
+})();
 
 
+const params = {
+    tabsClass: "js-tab-btn",
+    wrap: "js-tabs-wrap",
+    content: "js-tab-content",
+    active: "active"
+};
 
-// figureclose.addEventListener('click', function () {
-//     gallerywindow.classList.remove('gallery__window--active');
-// })
+function setTabs(params) {
+    const tabBtns = document.querySelectorAll(`.${params.tabsClass}`);
 
-// let gallerywindow = document.querySelector('.gallery__window');
-// let figureclose = document.querySelector('.gallery__window-close');
+    function onTabClick(e) {
+        e.preventDefault();
+        const path = this.dataset.path;
+        const wrap = document.querySelector(`.${params.wrap}`)
+        const currentContent = wrap.querySelector(`.${params.content}[data-target="${path}"]`);
+        const contents = wrap.querySelectorAll(`.${params.content}`);
 
-// document.querySelectorAll('.gallery__hover').forEach(function (tabsBtn) {
-//     tabsBtn.addEventListener('click', function (e) {
+        contents.forEach((el) => {
+            el.classList.remove(params.active);
+        });
 
-//         document.querySelectorAll('.gallery__window').forEach(tabsBtn => {
-//             tabsBtn.classList.remove('gallery__window--active')
-//         })
+        currentContent.classList.add(params.active);
 
+        tabBtns.forEach((el) => {
+            el.classList.remove(params.active);
+        });
 
+        this.classList.add(params.active);
+    }
 
-//         document.querySelectorAll('.gallery__hover').forEach(tabsBtn => {
-//             tabsBtn.classList.remove('gallery__hover--active')
-//         })
-
-//         e.currentTarget.classList.add('gallery__hover--active')
-
-//         const path = e.currentTarget.dataset.path;
-
-//         document.querySelector(`[data-target="${path}"]`).classList.add('gallery__window--active');
-//     })
-
-// });
-
-$(".accordion").accordion({
-    heightStyle: "content",
-    collapsible: true,
-});
-
-$(function () {
-    $(".accordion_header").click(function () {
-        $(".accordion_header").removeClass("active");
-        $(this).addClass("active");
+    tabBtns.forEach(function (el) {
+        el.addEventListener("click", onTabClick);
     });
+}
 
-    $(".accordion_header:first").addClass("active");
-});
-
+setTabs(params);
 
 ymaps.ready(init);
 function init() {
@@ -287,35 +296,83 @@ function init() {
     myMap.geoObjects.add(myPlacemark);
 }
 
-var selector = document.getElementById("tel");
 
-var im = new Inputmask("+7(999) 999-99-99");
-im.mask(selector);
+const form = document.querySelector('.contacts__form');
+const telSelector = form.querySelector('input[type="tel"]');
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
 
-
-
-const validation = new JustValidate('#form');
+const validation = new JustValidate('.contacts__form');
 
 validation
     .addField('#name', [
         {
             rule: 'minLength',
             value: 3,
+            errorMessage: 'Недопустимый формат',
         },
         {
             rule: 'maxLength',
             value: 30,
+            errorMessage: 'Недопустимый формат',
         },
         {
             rule: 'required',
+            value: true,
             errorMessage: 'Недопустимый формат',
         },
+
     ])
     .addField('#tel', [
         {
             rule: 'required',
+            value: true,
             errorMessage: 'Недопустимый формат',
         },
-    ])
+        {
+            rule: 'function',
+            validator: function () {
+                const phone = telSelector.inputmask.unmaskedvalue();
+                return phone.length === 10;
+            },
+            errorMessage: 'Недопустимый формат',
+        },
 
+    ]).onSuccess((event) => {
+        console.log('Validation passes and form submitted', event);
+
+
+        let formData = new FormData(event.target);
+
+        console.log(...formData);
+
+        let xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    console.log('Отправлено');
+                }
+            }
+        }
+        xhr.open('POST', 'mail.php', true);
+        xhr.send(formData);
+
+        event.target.reset();
+    });
+
+document.querySelectorAll('.js-scroll-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const href = this.getAttribute('href').substring(1);
+        const scrollTarget = document.getElementById(href);
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+        window.scrollBy({
+            top: elementPosition,
+            behavior: 'smooth'
+        });
+    });
+})
 

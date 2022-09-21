@@ -154,16 +154,15 @@ modalOverlay.addEventListener('click', (e) => {
 
 
 
-
 var swiperEvents = new Swiper('.swiper-container-events', {
 
-
     navigation: {
-        nextEl: '.events__swiper-btn',
+        nextEl: '.events__swiper-button-next',
+        prevEl: '.events__swiper-button-prev',
     },
 
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-events',
         clickable: true,
     },
 
@@ -171,8 +170,8 @@ var swiperEvents = new Swiper('.swiper-container-events', {
     breakpoints: {
         1025: {
             slidesPerView: 3,
-            spaceBetween: 50,
             slidesPerGroup: 3,
+            spaceBetween: 50,
         },
         600: {
             slidesPerView: 2,
@@ -187,6 +186,8 @@ var swiperEvents = new Swiper('.swiper-container-events', {
         },
 
         320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
             spaceBetween: 10,
         },
     }
@@ -200,6 +201,7 @@ var swiperPartners = new Swiper('.swiper-container-partners', {
 
     navigation: {
         nextEl: '.swiper-button-next-partners',
+        prevEl: '.swiper-button-prev-partners',
     },
 
     breakpoints: {

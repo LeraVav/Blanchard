@@ -1,4 +1,4 @@
-@media (max-width:1700px) {
+@media (max-width:1785px) {
 
     .contacts__form {
         width: 100%;
@@ -80,6 +80,10 @@
         min-height: 721px;
     }
 
+    .events__swiper-button-prev {
+        left: -2%;
+    }
+
     .contacts__info {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -102,6 +106,8 @@
     .contacts__messengers {
         margin-top: 1%;
     }
+
+
 }
 
 @media (max-width:1200px) {
@@ -458,6 +464,11 @@
         display: none;
     }
 
+    .events__swiper-button-prev,
+    .events__swiper-button-next {
+        display: none;
+    }
+
     .swiper-pagination-events {
         display: inline;
     }
@@ -552,10 +563,6 @@
         margin-bottom: 2%;
     }
 
-    /* .swiper-slide-parnters img {
-        width: 384px;
-        height: 128px;
-    } */
 
     .swiper-button-prev-partners {
         left: 0;
@@ -612,7 +619,7 @@
     .contacts__form-btn {
         max-height: 50px;
         display: block;
-        padding: 1.5% 5% 2% 4%;
+        /* padding: 1.5% 5% 2% 4%; */
     }
 
     .contacts__form-btn-320 {
@@ -753,7 +760,7 @@
 
     .accordion {
         margin-bottom: 10%;
-        width: 104%;
+        width: 100%;
     }
 
     .catalog__left {
@@ -802,7 +809,7 @@
     }
 
     .events {
-        margin-bottom: 13%;
+        margin-bottom: 9%;
     }
 
     .partners__title {
@@ -812,6 +819,15 @@
     .partners__descr {
         margin-bottom: 4%;
     }
+
+    .partners__subtitle {
+        margin-bottom: 4%;
+    }
+
+    /* .partners__img {
+        width: 263px;
+        height: 106px;
+    } */
 
     .swiper-container-partners {
         padding-left: 8.5%;
@@ -1110,7 +1126,7 @@
     }
 
 
-    .accordion-subtitle {
+    .accordion__heading-text-wrap {
         font-weight: 600;
         font-size: 18px;
         line-height: 32px;
@@ -1250,16 +1266,20 @@
         margin-bottom: 18%;
     }
 
-    /* .swiper-slide-parnters img {
+    .swiper-slide-parnters img {
         width: 195px;
         height: 65px;
-    } */
+    }
 
     .swiper-container-partners {
-        padding-left: 16.5%;
+        padding: 0 5% 0 16%;
     }
 
     .swiper-button-next-partners {
+        top: 28%;
+    }
+
+    .swiper-button-prev-partners {
         top: 28%;
     }
 

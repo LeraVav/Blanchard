@@ -65,6 +65,7 @@ img {
 
 body {
     min-width: 320px;
+    overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -81,7 +82,6 @@ body {
     background-color: transparent;
     cursor: pointer;
     outline: none;
-    border-radius: 16px;
 }
 
 .flex {
@@ -97,6 +97,7 @@ body {
     padding-left: 160px;
     padding-right: 160px;
 }
+
 
 /* Header*/
 
@@ -512,10 +513,10 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.dropdown:focus {
+/* .dropdown:focus {
     background: #7943A4;
     border: 1px solid #7943A4;
-}
+} */
 
 .dropdown:hover {
     color: rgba(194, 131, 243, 1);
@@ -547,16 +548,17 @@ body {
     background-image: url(../img/arrowhover.svg);
 }
 
+/* 
 .dropdown:active.dropdown::after {
     background-image: url(../img/arrowactive.svg);
-}
+} */
 
 .submenu-standart {
     width: 300px;
     padding: 40px;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 100%;
+    top: 175%;
     left: 0;
     z-index: 5;
     opacity: 0;
@@ -919,6 +921,7 @@ body {
     background: #9D5CD0;
     border-radius: 100px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .header__btn:focus {
@@ -1298,7 +1301,7 @@ input[type=checkbox]:checked+label:before {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
     fill: rgba(236, 236, 236, 1);
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .gallery__hover {
@@ -1658,6 +1661,7 @@ input[type=checkbox]:checked+label:before {
     position: relative;
     display: block;
     width: 100%;
+    margin-top: -1px;
     margin-bottom: 0;
     border-top: 1px solid transparent;
     border-bottom: 1px solid var(--light-middle-gray);
@@ -1726,7 +1730,7 @@ input[type=checkbox]:checked+label:before {
 }
 
 .accordion__heading:focus:not(:active) {
-    color: var(--white);
+    color: var(--main-white);
     outline: none;
 }
 
@@ -1982,6 +1986,8 @@ input[type=checkbox]:checked+label:before {
 }
 
 
+
+
 /* События */
 
 .events {
@@ -2133,17 +2139,33 @@ input[type=checkbox]:checked+label:before {
 }
 
 .events__swiper-btn {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-image: url(../img/eventsarrow.svg);
+    /* position: absolute; */
     background-size: contain;
     background-repeat: no-repeat;
-    right: -32px;
-    left: auto;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+.events__swiper-button-next {
+    right: -1.5%;
+    ;
+    left: auto;
+    width: 50px;
+    height: 50px;
+    fill: #ECECEC;
+}
+
+.events__swiper-button-prev {
+    rotate: 180deg;
+    left: -1.5%;
+    width: 50px;
+    height: 50px;
+    fill: #ECECEC;
+}
+
+.events__swiper-btn-disabled {
+    opacity: 0;
 }
 
 
@@ -2167,11 +2189,12 @@ input[type=checkbox]:checked+label:before {
 
 .partners {
     margin-bottom: 80px;
+    overflow: hidden;
 }
 
 .partners__title {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1%;
     padding: 0;
     font-weight: 400;
     font-size: 48px;
@@ -2231,21 +2254,21 @@ input[type=checkbox]:checked+label:before {
 
 .tooltip__marker svg:focus {
     fill: #D1A9F0;
-    border: 1px solid #9D5CD0;
-    border-radius: 50%;
+    outline: 1px solid #9D5CD0;
+    outline-style: inherit;
 }
 
 
 .tooltip__marker svg:hover {
     fill: #D1A9F0;
-    border: 1px solid #9D5CD0;
-    border-radius: 50%;
+    outline: 1px solid #9D5CD0;
+    outline-style: inherit;
 }
 
 
 .tooltip__marker svg:active {
     fill: #9D5CD0;
-    border: none;
+    outline: none;
     stroke: white;
 }
 
@@ -2309,7 +2332,7 @@ input[type=checkbox]:checked+label:before {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    padding: 0 calc(53px + (75 - 53) * ((100vw - 1340px)/ (1920 - 1340)));
+    padding: 0 3% 0 3%;
 }
 
 /* .swiper-slide-parnters {
@@ -2352,7 +2375,6 @@ input[type=checkbox]:checked+label:before {
 }
 
 .swiper-button-prev-partners {
-    left: 1.2%;
     top: 37%;
     background-image: url(../img/eventsarrow.svg);
     background-size: contain;
@@ -2387,7 +2409,7 @@ input[type=checkbox]:checked+label:before {
 
 .contacts {
     padding-top: 1%;
-    border: 1px solid #CACACA;
+    outline: 1px solid #CACACA;
 }
 
 .contacts__info {

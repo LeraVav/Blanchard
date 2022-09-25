@@ -2,18 +2,26 @@
 let burger = document.querySelector('.burger');
 let burgerclose = document.querySelector('.burgerclose');
 let menu = document.querySelector('.header__nav');
-let menuLinks = menu.querySelectorAll('.nav__list');
+let menuLinks = document.querySelector('.header__list-top');
 
 burger.addEventListener('click',
-    function () {
+    () => {
         burger.classList.toggle('burgerclose--active');
         menu.classList.toggle('header__nav--active');
     })
 
-burgerclose.addEventListener('click', function () {
-    burger.classList.remove('burger--active');
-    menu.classList.remove('header__nav--active');
-})
+menuLinks.addEventListener('click',
+    () => {
+        burger.classList.remove('burger--active');
+        menu.classList.remove('header__nav--active');
+    })
+
+burgerclose.addEventListener('click',
+    () => {
+        burger.classList.remove('burger--active');
+        menu.classList.remove('header__nav--active');
+    })
+
 
 
 const searchBtn = document.querySelector('.header__search-btn-open');
@@ -340,7 +348,8 @@ validation
             errorMessage: 'Недопустимый формат',
         },
 
-    ]).onSuccess((event) => {
+    ])
+    .onSuccess((event) => {
         console.log('Validation passes and form submitted', event);
 
 
